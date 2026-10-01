@@ -7,7 +7,7 @@ const useMacbookStore = create(set) =>({
     setScale:(scale) =>({scale}),
 
     reset:() =>({
-        color: '#2e2c3e',scale:0.08
+        color: '#2e2c2e',scale:0.08
     }),
 })
 export default useMacbookStore;

@@ -9,13 +9,13 @@ Title: macbook pro M3 16 inch 2024
 */
 
 import React from 'react'
-import { useGLTF } from '@react-three/drei'
+import { useGLTF, useTexture } from '@react-three/drei'
+import { Color } from 'three'
+import useMacbookStore from '../../store'
+import { noChangeParts } from '../../constants'
 
 export default function MacbookModel(props) {
   const { nodes, materials } = useGLTF('/models/macbook-transformed.glb')
-
-  const
-
   return (
     <group {...props} dispose={null}>
       <mesh geometry={nodes.Object_10.geometry} material={materials.PaletteMaterial001} rotation={[Math.PI / 2, 0, 0]} />
